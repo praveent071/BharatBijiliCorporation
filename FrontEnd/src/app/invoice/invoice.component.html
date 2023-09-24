@@ -1,0 +1,20 @@
+<div class="confirmation">
+    <h2>Payment Confirmation</h2>
+    <ul>
+        <div class="confirmation-details">
+            <p><strong>Payment Amount:</strong>{{paymentAmount}} </p>
+            <p><strong>Tranaction Number:</strong>{{id}} </p>
+        </div>
+
+        <div class="receipt">
+            <h3>Receipt</h3>
+            <p>Thank you for your payment. Here are the transaction details:</p>
+        </div>
+
+    </ul>
+    <button (click)="downloadReceipt()">Download Receipt</button>
+
+</div>
+<div class="logout">
+    <button [routerLink]="['/login']">Log Out</button>
+</div>

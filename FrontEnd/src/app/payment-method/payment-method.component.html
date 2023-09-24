@@ -1,0 +1,27 @@
+<div class="pay">
+    <h2>Payment Mode</h2>
+    <h4>
+        <b>Amount :{{paymentAmount}}</b></h4>
+    <h6>* Discount of 5% payment is before the due date</h6>
+    <h6>* Online Payment 5% discount</h6>
+    <form>
+        <div class="form-design">
+
+            <div>
+                <p>
+                    <b>How would you want to pay ?</b></p>
+                <mat-icon>credit_card</mat-icon>
+                <button mat-button color="primary" (click)="payWithCreditCard()">Credit Card</button>
+            </div>
+            <div>
+                <mat-icon>credit_card</mat-icon>
+                <button mat-button color="primary" (click)="payWithDebitCard()">Debit Card</button>
+
+            </div>
+            <div>
+                <mat-icon>account_balance_wallet</mat-icon>
+                <button mat-button color="primary" (click)="payWithWallet()" id="redirectButton">Wallets</button>
+            </div>
+        </div>
+    </form>
+</div>

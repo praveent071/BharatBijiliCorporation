@@ -1,0 +1,68 @@
+/* Apply a basic layout to the form container */
+
+.payment-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 200px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 13px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#Expiry {
+    width: 50%;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00bbff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00b39e;
+}
+
+.example-form {
+    width: 400%;
+}
+
+.expiry-input {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 13px;
+}
+
+.expiry-out {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 13px;
+}

@@ -1,0 +1,22 @@
+<div class="login">
+    <h2>Customer Login</h2>
+    <form (ngSubmit)="login()">
+        <div class="example-form">
+            <mat-form-field>
+                <mat-label>Customer Id</mat-label>
+                <input matInput placeholder="CustomerId" name="Customerid" [(ngModel)]="customerId" required>
+            </mat-form-field>
+
+        </div>
+        <button type="button" (click)="generateOtp()">Generate Otp</button>
+
+        <div class="form-group " *ngIf="!otpd">
+            <mat-form-field>
+                <mat-label>OTP</mat-label>
+
+                <input matInput placeholder="Enter OTP 986574" name="otp" [(ngModel)]="otp" [disabled]="otpd" required>
+            </mat-form-field>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>

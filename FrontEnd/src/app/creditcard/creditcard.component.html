@@ -1,0 +1,38 @@
+<div class="payment-container">
+    <h2>Pay via Card</h2>
+    <form #credit="ngForm" (ngSubmit)="creditcard()">
+        <div class="example-form">
+            <mat-form-field>
+                <mat-label>Card Number</mat-label>
+                <input matInput placeholder="Credit Card Number" [(ngModel)]="acc" name="acc" required pattern="^\d{16}$" title="Please enter a 16-digit card number">
+
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="expiry-input">
+                <mat-label>Expiry Month</mat-label>
+                <input matInput placeholder="Expiry Month" [(ngModel)]="month" name="expiryMonth" required>
+            </mat-form-field>
+            <mat-form-field class="expiry-input">
+                <mat-label>Expiry Year</mat-label>
+                <input matInput placeholder="Expiry Year" [(ngModel)]="year" name="expiryYear" required>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="expiry-out">
+                <mat-label>CVV</mat-label>
+                <input matInput placeholder="Cvv" [(ngModel)]="cvv" name="cvv" required>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="expiry-out">
+                <mat-label>OTP</mat-label>
+
+                <input matInput placeholder="Enter OTP 986574" ngModule name="otp" required>
+            </mat-form-field>
+        </div>
+        <button type="submit">Pay Now</button>
+    </form>
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>
